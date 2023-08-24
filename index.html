@@ -1,1192 +1,1191 @@
 <style>
-    :root {
-    --dark-blue-color: #003479;
-    --light-blue-color: #639EC8;
-    --yellow-color: #FBDE42;
-    --grey-color: #C4C7C8;
-    --brown-color: #9D986D;
+  :root {
+  --dark-blue-color: #003479;
+  --light-blue-color: #639EC8;
+  --yellow-color: #FBDE42;
+  --grey-color: #C4C7C8;
+  --brown-color: #9D986D;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
 }
 
 .wrapper {
-    max-width: 945px;
-  
-    margin: 0 auto 12px;   
-    position: relative;
+  max-width: 945px;
+
+  margin: 0 auto 12px;   
+  position: relative;
 }
 
 .topwords {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 mark {
-    color:#dd0000;
-    background: none;
+  color:#dd0000;
+  background: none;
 }
 
 .topsection {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .wordsonleft p {  
-    
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
+  
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .wordsred {
-    width: 950px;
+  width: 950px;
 }
 
 .pictureonright img {
-    width: 350px;
-    height: 282px; 
-    margin-top: 20px;
-    border-radius: 15px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 350px;
+  height: 282px; 
+  margin-top: 20px;
+  border-radius: 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .resoursebutton {
-    
-    width: 945px;
-    height: 73px;
-    margin: auto;
-    border: 1px solid black;
-    margin-bottom: 26px;
-    text-align: center;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background: #003479;
-    border-radius: 15px;
+  
+  width: 945px;
+  height: 73px;
+  margin: auto;
+  border: 1px solid black;
+  margin-bottom: 26px;
+  text-align: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #003479;
+  border-radius: 15px;
 }
 
 .btntxt {
-    font-family: 'Arial';
-    margin-top: 20px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: white;
+  font-family: 'Arial';
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: white;
 }
 
 .squarebuttons {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .squarebuttonsright {
-    display: grid;
+  display: grid;
 }
 
 .res {
-    background: #639EC8;
-    width: 446px;
-    height: 72px;
-    margin-bottom: 26px;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    padding: 10px;
-    color: #FFFFFF;
-    border-radius: 15px;
-    cursor: pointer;
+  background: #639EC8;
+  width: 446px;
+  height: 72px;
+  margin-bottom: 26px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 10px;
+  color: #FFFFFF;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .freeonlinebutton {
-    width: 945px;
-    height: 73px;
-    margin: auto;
-    border: 1px solid black;
-    margin-bottom: 26px;
-    text-align: center;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background: #003479;
-    border-radius: 15px;
+  width: 945px;
+  height: 73px;
+  margin: auto;
+  border: 1px solid black;
+  margin-bottom: 26px;
+  text-align: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #003479;
+  border-radius: 15px;
 }
 
 .freeonlinebutton.btntxt {
-    font-family: 'Arial';
-    margin-top: 20px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: white;
+  font-family: 'Arial';
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: white;
 }
 
 .bottomthreesquares {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .square {
-    width: 286px;
-    height: 124px;
-    padding: 10px;
-    background: #639EC8;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    cursor: pointer;
-    border-radius: 15px;
-    color: #FFFFFF;
+  width: 286px;
+  height: 124px;
+  padding: 10px;
+  background: #639EC8;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  cursor: pointer;
+  border-radius: 15px;
+  color: #FFFFFF;
 }
 
 .resoursebutton:hover {
-    transform: scale(1.02) 
+  transform: scale(1.02) 
 }
 
 .res:hover {
-    transform: scale(1.02)
+  transform: scale(1.02)
 }
 
 .freeonlinebutton:hover {
-    transform: scale(1.02)
+  transform: scale(1.02)
 }
 
 .square:hover {
-    transform: scale(1.02)
+  transform: scale(1.02)
 }
 
 .pictureonright img:hover {
-    transform: scale(1.02)
+  transform: scale(1.02)
 }
 
 button {
-    background: none;
-    text-align:left;
-    padding: 0px;
-    border-width: 0px;
-    border-style: none;
-    border-color: none;
-    border-image: none;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: none;
+  text-align:left;
+  padding: 0px;
+  border-width: 0px;
+  border-style: none;
+  border-color: none;
+  border-image: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #myDIV {
-    width: 825px;
-    height: 346px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 346px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV2 {
-    width: 825px;
-    height: 306px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 306px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV3 {
-    width: 825px;
-    height: 962px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 962px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV4 {
-  width: 825px;
-    height: 662px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+width: 825px;
+  height: 662px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV5 {
-    width: 825px;
-    height: 530px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 530px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV6 {
-    width: 825px;
-    height: 562px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 562px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV7 {
-    width: 825px;
-    height: 862px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 862px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV8 {
-    width: 825px;
-    height: 541px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 541px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV9 {
-    width: 825px;
-    height: 541px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 541px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV10 {
-    width: 825px;
-    height: 541px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 541px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV11 {
-    width: 825px;
-    height: 541px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 541px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV12 {
-    width: 825px;
-    height: 541px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 541px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV13 {
-    width: 825px;
-    height: 541px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 541px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV14 {
-    width: 825px;
-    height: 541px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 541px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV15 {
-    width: 825px;
-    height: 541px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 541px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIV16 {
-    width: 825px;
-    height: 541px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 541px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIVc1 {
-    width: 825px;
-    height: 246px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 246px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIVc2 {
-    width: 825px;
-    height: 247px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 247px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 
 #myDIVc3 {
-    width: 825px;
-    height: 234px;
-    background: rgba(251, 222, 66, 0.8);
-    border-radius: 32px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 19px 61px;
-    display: none;
-    margin: auto;
+  width: 825px;
+  height: 234px;
+  background: rgba(251, 222, 66, 0.8);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 19px 61px;
+  display: none;
+  margin: auto;
 }
 </style>
 
+<body>
+  <!--Top section-->
+  <div class="topwords">
+      <div class="wrapper">
+          <div class="topsection">
+              <div class="wordsonleft">
+                  <p style="text-align: center;">
+                      <strong><span style="font-size: 28px; color: #17365d;">&nbsp;</span></strong></p>
+                  <p style="text-align: center;"><strong><span style="font-size: 28px; color: #17365d;">Applied Forensic Epidemiology in </span></strong></p>
+                  <p style="text-align: center;"><strong><span style="font-size: 28px; color: #17365d;">Medical Examiner and Coroner Offices</span></strong></p>
+                  <p style="text-align: center;"><strong><span style="font-size: 16px;">&nbsp;</span></strong>
+
+                  </p>
+
+                  <p>
+                      <b>What is Applied Forensic Epidemiology and How Is It Related to Public Health?
+                      </b>
+                  </p>
+
+                  <p>
+                      Each year, medical examiner and coroner (MEC) offices conduct medicolegal death investigations (MDI) of sudden or unexpected deaths, including suspicious or violent deaths, such as homicides and suicides, unintentional (accidental) deaths, and unexpected
+                      deaths from natural causes <a href="https://bjs.ojp.gov/content/pub/pdf/meco18.pdf" target="_blank"> (about 600,000 deaths per year or approximately 20% of all deaths in the US)</a>. In this capacity, MECs
+                      are often considered “first responders” in identifying diseases and causes of death in the population. The findings from MDI data provide key information for public health planning, prevention efforts, and policy development.
+                  </p>
+
+                  <p>
+                      Larger MEC offices often employ epidemiologists or data analysts who use public health methods to analyze MDI data. These epidemiologists are called applied forensic epidemiologists (in contrast to other types of forensic epidemiologists who determine
+                      the probability of cause of death in potential criminal investigations or in disease-related litigation). Responsibilities may vary by jurisdiction, but in general, applied forensic epidemiologists analyze MDI data, track trends
+                      in causes of death, prepare jurisdiction-level reports on key conditions, prepare subsets of MDI or other data to share with law enforcement and public health entities, and support research efforts as needed.
+                  </p>
+
+                  <p>
+                      Applied forensic epidemiologists act as key liaisons between MEC offices and public health entities, by providing analysis results and interpreting the findings from aggregated MDI data. This information is essential for identifying the populations at
+                      risk for various causes of death, as well as the locations and circumstances associated with these deaths – information that is critical for the development and implementation public health interventions.
+                  </p>
+
+                  <p>
+                      <b>
+                          How has CSTE Supported Applied Forensic Epidemiology?
+                      </b>
+                  </p>
+
+                  <p>
+                      In recognition of the important epidemiology functions that occur in MEC offices, CSTE partnered with the Centers for Disease Control and Prevention/National Center for Health Statistics (CDC/NCHS) in early 2022 to convene the CSTE Forensic Epidemiology
+                      Workgroup. This group supports the work of applied forensic epidemiologists and other professionals who perform data analysis duties in MEC offices. The group aims to better understand the challenges and needs of applied forensic
+                      epidemiologists in the US. Focus areas and activities include:
+                  </p>
+
+                  <ul>
+                      <li>
+                          Identifying, developing, and promoting effective practices to enhance the overall capacity of applied forensic epidemiologists working in MEC offices.
+                      </li>
+                      <li>
+                          Supporting applied forensic epidemiologists through training, capacity development, peer-to-peer networking, consultation, and learning opportunities.
+                      </li>
+                      <li>
+                          Developing strategies to improve collaboration between MEC offices, public health partners and other stakeholders to promote the effective use of MDI data to inform public health practice.
+                      </li>
+                  </ul>
+
+                  <p>
+                      The CSTE Forensic Epidemiology Workgroup addresses these aims through monthly conference calls and an annual in-person meeting. The 2022 Summary Report describes the formation of the workgroup and recent activities. For more information about the CSTE
+                      Forensic Epidemiology Workgroup, please contact Danielle Boyd at <a href="mailto:dboyd@cste.org">dboyd@cste.org</a>.
+                  </p>
+
+                  <p>
+                      In addition to the resources curated by CSTE, many national organizations provide helpful resources.
+                  </p>
+
+                  <ul>
+                      <li>
+                          <a href="https://www.cdc.gov/nchs/comec/" target="_blank">Centers for Disease Control, National Center for Health Statistics Coordinating Office for Medical Examiners and Coroners (COMEC)</a>
+                      </li>
+                      <li>
+                          <a href="https://www.cdc.gov/phlp/index.html" target="_blank">CDC Public Health Law</a>
+                          <li>
+                              <a href="https://www.networkforphl.org/" target="_blank">National Network for Public Health Law</a>
+                          </li>
+                          <li>
+                              <a href="https://www.ojp.gov/resources/ojp-hhs-mdi-wg" target="_blank">Office of Justice Programs/Centers for Disease Control Federal Medicolegal Death Investigation (MDI) Interagency Working Group (MDI-IWG)</a>
+                          </li>
+                          <li>
+                              <a href="https://www.thename.org/" target="_blank">The National Association of Medical Examiners</a>
+                              <li>
+                                  <a href="https://theiacme.com/" target="_blank">The International Association of Coroners and Medical Examiners</a>
+                              </li>
+
+                  </ul>
+
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+  <!--Word box section-->
+  <div class="boxes">
+
+      <div class="wrapper">
+
+      </div>
 
-<!--Top section-->
-<div class="topwords">
-    <div class="wrapper">
-        <div class="topsection">
-            <div class="wordsonleft">
-                <p style="text-align: center;">
-                    <strong><span style="font-size: 28px; color: #17365d;">&nbsp;</span></strong></p>
-                <p style="text-align: center;"><strong><span style="font-size: 28px; color: #17365d;">Applied Forensic Epidemiology in </span></strong></p>
-                <p style="text-align: center;"><strong><span style="font-size: 28px; color: #17365d;">Medical Examiner and Coroner Offices</span></strong></p>
-                <p style="text-align: center;"><strong><span style="font-size: 16px;">&nbsp;</span></strong>
-
-                </p>
-
-                <p>
-                    <b>What is Applied Forensic Epidemiology and How Is It Related to Public Health?
-                        </b>
-                </p>
-
-                <p>
-                    Each year, medical examiner and coroner (MEC) offices conduct medicolegal death investigations (MDI) of sudden or unexpected deaths, including suspicious or violent deaths, such as homicides and suicides, unintentional (accidental) deaths, and unexpected
-                    deaths from natural causes <a href="https://bjs.ojp.gov/content/pub/pdf/meco18.pdf" target="_blank"> (about 600,000 deaths per year or approximately 20% of all deaths in the US)</a>. In this capacity, MECs are often
-                    considered “first responders” in identifying diseases and causes of death in the population. The findings from MDI data provide key information for public health planning, prevention efforts, and policy development.
-                </p>
-
-                <p>
-                    Larger MEC offices often employ epidemiologists or data analysts who use public health methods to analyze MDI data. These epidemiologists are called applied forensic epidemiologists (in contrast to other types of forensic epidemiologists who determine
-                    the probability of cause of death in potential criminal investigations or in disease-related litigation). Responsibilities may vary by jurisdiction, but in general, applied forensic epidemiologists analyze MDI data, track trends in
-                    causes of death, prepare jurisdiction-level reports on key conditions, prepare subsets of MDI or other data to share with law enforcement and public health entities, and support research efforts as needed.
-                </p>
-
-                <p>
-                    Applied forensic epidemiologists act as key liaisons between MEC offices and public health entities, by providing analysis results and interpreting the findings from aggregated MDI data. This information is essential for identifying the populations at
-                    risk for various causes of death, as well as the locations and circumstances associated with these deaths – information that is critical for the development and implementation public health interventions.
-                </p>
-
-                <p>
-                    <b>
-                            How has CSTE Supported Applied Forensic Epidemiology?
-                        </b>
-                </p>
-
-                <p>
-                    In recognition of the important epidemiology functions that occur in MEC offices, CSTE partnered with the Centers for Disease Control and Prevention/National Center for Health Statistics (CDC/NCHS) in early 2022 to convene the CSTE Forensic Epidemiology
-                    Workgroup. This group supports the work of applied forensic epidemiologists and other professionals who perform data analysis duties in MEC offices. The group aims to better understand the challenges and needs of applied forensic epidemiologists
-                    in the US. Focus areas and activities include:
-                </p>
-
-                <ul>
-                    <li>
-                        Identifying, developing, and promoting effective practices to enhance the overall capacity of applied forensic epidemiologists working in MEC offices.
-                    </li>
-                    <li>
-                        Supporting applied forensic epidemiologists through training, capacity development, peer-to-peer networking, consultation, and learning opportunities.
-                    </li>
-                    <li>
-                        Developing strategies to improve collaboration between MEC offices, public health partners and other stakeholders to promote the effective use of MDI data to inform public health practice.
-                    </li>
-                </ul>
-
-                <p>
-                    The CSTE Forensic Epidemiology Workgroup addresses these aims through monthly conference calls and an annual in-person meeting. The<a href="https://www.cste.org/resource/resmgr/Applied_Forensic_Epi_Workgro.pdf" target="_blank"> 2022 Summary Report</a>                    describes the formation of the workgroup and recent activities. For more information about the CSTE Forensic Epidemiology Workgroup, please contact Danielle Boyd at <a href="mailto:dboyd@cste.org">dboyd@cste.org</a>.
-                </p>
-
-                <p>
-                    In addition to the resources curated by CSTE, many national organizations provide helpful resources.
-                </p>
-
-                <ul>
-                    <li>
-                        <a href="https://www.cdc.gov/nchs/comec/" target="_blank">Centers for Disease Control, National Center for Health Statistics Coordinating Office for Medical Examiners and Coroners (COMEC)</a>
-                    </li>
-                    <li>
-                        <a href="https://www.cdc.gov/phlp/index.html" target="_blank">CDC Public Health Law</a>
-                    </li>
-                    <li>
-                        <a href="https://www.networkforphl.org/" target="_blank">National Network for Public Health Law</a>
-                    </li>
-                    <li>
-                        <a href="https://www.ojp.gov/resources/ojp-hhs-mdi-wg" target="_blank">Office of Justice Programs/Centers for Disease Control Federal Medicolegal Death Investigation (MDI) Interagency Working Group (MDI-IWG)</a>
-                    </li>
-                    <li>
-                        <a href="https://www.thename.org/" target="_blank">The National Association of Medical Examiners</a>
-                    </li>
-                    <li>
-                        <a href="https://theiacme.com/" target="_blank">The International Association of Coroners and Medical Examiners</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!--Word box section-->
-<div class="boxes">
-
-    <div class="wrapper">
-
-    </div>
+      <!--Resource button-->
+      <div class="wrapper">
+          <div class="resoursebutton">
+              <div class="btntxt">
+                  RESOURCES
+              </div>
+          </div>
+      </div>
 
-    <!--Resource button-->
-    <div class="wrapper">
-        <div class="resoursebutton">
-            <div class="btntxt">
-                RESOURCES
-            </div>
-        </div>
-    </div>
+      <!--Popup words-->
+      <div class="wrapper">
+          <div id="myDIV" onclick="closewords()">
+              <b>Case Management Systems</b> <br><br> Medical examiner and coroner (MEC) offices often used software-based case management systems (CMS) to collect, organize, and store case-related data. MEC office staff enter case-related data using
+              standardized variables or forms to create a uniform data set that can be queried or analyzed. Depending on the features of the software, these systems can also be used to facilitate data sharing with stakeholders, such as law enforcement
+              or public health.
 
-    <!--Popup words-->
-    <div class="wrapper">
-        <div id="myDIV" onclick="closewords()">
-            <b>Case Management Systems</b> <br /><br /> Medical examiner and coroner (MEC) offices often used software-based case management systems (CMS) to collect, organize, and store case-related data. MEC office staff enter case-related data using
-            standardized variables or forms to create a uniform data set that can be queried or analyzed. Depending on the features of the software, these systems can also be used to facilitate data sharing with stakeholders, such as law enforcement or
-            public health.
+              <br><br>
 
-            <br /><br />
+              <a href="https://www.nist.gov/system/files/documents/2021/07/14/MDI%20data%20commonly%20collected%20and%20exchanged_REFERENCE_07092021_0.pdf" target="_blank">MDI data commonly collected and exchanged_REFERENCE_07092021_0.pdf (nist.gov)</a>
 
-            <a href="https://www.nist.gov/system/files/documents/2021/07/14/MDI%20data%20commonly%20collected%20and%20exchanged_REFERENCE_07092021_0.pdf" target="_blank">MDI data commonly collected and exchanged_REFERENCE_07092021_0.pdf (nist.gov)</a>
+              <br><br>
 
-            <br /><br />
+              <a href="https://forensiccoe.org/private/63da9032991eb" target="_blank">Data Exchange Practices of Medicolegal Death Investigation (forensiccoe.org)</a> For a list of Medicolegal Death Investigation (MDI) Common Data Elements, see Appendix
+              B
 
-            <a href="https://forensiccoe.org/private/63da9032991eb" target="_blank">Data Exchange Practices of Medicolegal Death Investigation (forensiccoe.org)</a> For a list of Medicolegal Death Investigation (MDI) Common Data Elements, see Appendix
-            B
+              <br><br>
 
-            <br /><br />
+              <a href="https://forensiccoe.org/electronic-case-management-system-mdi/" target="_blank">A Landscape Study of Electronic Case Management Systems for Medical Examiners and Coroners Forensic Technology Center of Excellence (forensiccoe.org)</a>
 
-            <a href="https://forensiccoe.org/electronic-case-management-system-mdi/" target="_blank">A Landscape Study of Electronic Case Management Systems for Medical Examiners and Coroners Forensic Technology Center of Excellence (forensiccoe.org)</a>
+              <br><br> Recommendations from FEW CMS subcommittee
+          </div>
+      </div>
 
-            <br /><br /> Recommendations from FEW CMS subcommittee
-        </div>
-    </div>
+      <div class="wrapper">
+          <div id="myDIV2" onclick="closewords2()">
+              <b>Data Visualization and Dashboards</b>
 
-    <div class="wrapper">
-        <div id="myDIV2" onclick="closewords2()">
-            <b>Data Visualization and Dashboards</b>
+              <br><br> Many medical examiner and coroner (MEC) offices use data visualization techniques and dashboards to enhance the use of medicolegal death investigation (MDI) data to learn about the patterns of the different types of deaths occurring
+              in their jurisdiction. Users of the dashboards are often able to make selections and submit queries to see the number of deaths by cause and manner of death, demographic characteristics of the decedent, trends over time, and location where
+              deaths occur.
 
-            <br /><br /> Many medical examiner and coroner (MEC) offices use data visualization techniques and dashboards to enhance the use of medicolegal death investigation (MDI) data to learn about the patterns of the different types of deaths occurring
-            in their jurisdiction. Users of the dashboards are often able to make selections and submit queries to see the number of deaths by cause and manner of death, demographic characteristics of the decedent, trends over time, and location where
-            deaths occur.
+              <br><br> The links below highlight examples of dashboards and data visualizations from MEC offices or other agencies that use MDI data:
 
-            <br /><br /> The links below highlight examples of dashboards and data visualizations from MEC offices or other agencies that use MDI data:
+              <br><br>
 
-            <br /><br />
+              <a href="https://maps.cookcountyil.gov/medexammaps/" target="_blank">Cook County Medical Examiner Maps (cookcountyil.gov)</a><br>
 
-            <a href="https://maps.cookcountyil.gov/medexammaps/" target="_blank">Cook County Medical Examiner Maps (cookcountyil.gov)</a><br />
+              <a href="https://kingcounty.gov/depts/health/examiner/services/reports-data/overdose.aspx" target="_blank">Overdose deaths - King County</a><br>
 
-            <a href="https://kingcounty.gov/depts/health/examiner/services/reports-data/overdose.aspx" target="_blank">Overdose deaths - King County</a><br />
+              <a href="https://ccbh.net/overdose-data-dashboard/" target="_blank">Overdose Data Dashboard – Cuyahoga County</a>
 
-            <a href="https://ccbh.net/overdose-data-dashboard/" target="_blank">Overdose Data Dashboard – Cuyahoga County</a>
+          </div>
+      </div>
 
-        </div>
-    </div>
+      <div class="wrapper">
+          <div id="myDIV3" onclick="closewords3()">
+              <b>Death Certification Guidance </b>
 
-    <div class="wrapper">
-        <div id="myDIV3" onclick="closewords3()">
-            <b>Death Certification Guidance </b>
+              <br><br> Medical examiners and coroners (MECs) are responsible for determining the cause and manner 
+              of death of decedents. Though state statutes vary, in general, MECs investigate sudden and unexpected deaths, 
+              deaths in which there is no attending physician, and suspicious or violent deaths, including such deaths as homicides, 
+              suicides, deaths that occur as a result of accidents, and unexpected deaths from natural causes. The certifier 
+              uses the information from the death investigation to complete the medical portion of the death certificate. 
+              The MECs report this information to authorities such as the state vital registrar. 
 
-            <br /><br /> Medical examiners and coroners (MECs) are responsible for determining the cause and manner of death of decedents. Though state statutes vary, in general, MECs investigate sudden and unexpected deaths, deaths in which there is
-            no attending physician, and suspicious or violent deaths, including such deaths as homicides, suicides, deaths that occur as a result of accidents, and unexpected deaths from natural causes. The certifier uses the information from the death
-            investigation to complete the medical portion of the death certificate. The MECs report this information to authorities such as the state vital registrar.
+              <br><br> The Centers for Disease Control and Prevention (CDC) and the National Center for Health Statistics 
+              (NCHS) have prepared several guidance documents to help standardize how death certificates are completed. Consistency in 
+              the information and language used to complete 
+              the medical portion of the death certificate helps improve data quality and comparability.
 
-            <br /><br /> The Centers for Disease Control and Prevention (CDC) and the National Center for Health Statistics (NCHS) have prepared several guidance documents to help standardize how death certificates are completed. Consistency in the information
-            and language used to complete the medical portion of the death certificate helps improve data quality and comparability.
+              <br><br>The links below provide recommendations and guidance for completing the death certificate, for all deaths and for specific types of deaths. 
 
-            <br /><br />The links below provide recommendations and guidance for completing the death certificate, for all deaths and for specific types of deaths.
+              <br><br><a href="https://www.cdc.gov/nchs/nvss/training.htm" target="_blank">National Vital Statistics System - Training (cdc.gov)</a>
 
-            <br /><br /><a href="https://www.cdc.gov/nchs/nvss/training.htm" target="_blank">National Vital Statistics System - Training (cdc.gov)</a>
+              <br><br><a href="" target="_blank"></a>
+              <br><br><a href="https://www.cdc.gov/nchs/nvss/reporting-guidance.htm" target="_blank">NVSS - Vital Statistics Reporting Guidance (cdc.gov)	</a>
+              <br><br><a href="https://www.cdc.gov/nchs/nvss/handbooks-and-guides.htm" target="_blank">NVSS - Handbooks and Guides for Use with U.S. Standard Certificates and Reports (cdc.gov)</a>
+              <br><br><a href="https://www.cdc.gov/nchs/nvss/writing-cause-of-death-statements.htm" target="_blank">NVSS - Writing Cause-of-Death Statements (cdc.gov) </a>
+              <br><br><a href="" target="_blank"></a>
+              <br><br><a href="https://www.cdc.gov/sids/TrainingMaterial.htm" target="_blank">CDC - SUIDI Training Resources - SIDS and SUID - Reproductive Health </a>
+              <br><br><a href="https://www.cdc.gov/poxvirus/mpox/clinicians/reporting-deaths.html" target="_blank">Completing a Monkeypox-Related Death Certificate | Monkeypox | Poxvirus | CDC </a>
+              <br><br><a href="https://www.cdc.gov/nchs/nvss/medical-examiners-coroners.htm" target="_blank">NVSS - Medical Examiners and Coroners (cdc.gov) </a>
+              <br><br><a href="https://www.cdc.gov/nchs/data/nvsr/nvsr70/NVSR70-13.pdf" target="_blank">Evaluating the cause-of-death information for injury related deaths </a>
 
-            <br /><br /><a target="_blank"></a>
-            <br /><br /><a href="https://www.cdc.gov/nchs/nvss/reporting-guidance.htm" target="_blank">NVSS - Vital Statistics Reporting Guidance (cdc.gov)	</a>
-            <br /><br /><a href="https://www.cdc.gov/nchs/nvss/handbooks-and-guides.htm" target="_blank">NVSS - Handbooks and Guides for Use with U.S. Standard Certificates and Reports (cdc.gov)</a>
-            <br /><br /><a href="https://www.cdc.gov/nchs/nvss/writing-cause-of-death-statements.htm" target="_blank">NVSS - Writing Cause-of-Death Statements (cdc.gov) </a>
-            <br /><br /><a target="_blank"></a>
-            <br /><br /><a href="https://www.cdc.gov/sids/TrainingMaterial.htm" target="_blank">CDC - SUIDI Training Resources - SIDS and SUID - Reproductive Health </a>
-            <br /><br /><a href="https://www.cdc.gov/poxvirus/mpox/clinicians/reporting-deaths.html" target="_blank">Completing a Monkeypox-Related Death Certificate | Monkeypox | Poxvirus | CDC </a>
-            <br /><br /><a href="https://www.cdc.gov/nchs/nvss/medical-examiners-coroners.htm" target="_blank">NVSS - Medical Examiners and Coroners (cdc.gov) </a>
-            <br /><br /><a href="https://www.cdc.gov/nchs/data/nvsr/nvsr70/NVSR70-13.pdf" target="_blank">Evaluating the cause-of-death information for injury related deaths </a>
+              <br><br><a href="https://pubmed.ncbi.nlm.nih.gov/31240030/"target="_blank">National Association of Medical Examiners Position Paper: Recommendations for the Investigation and Certification of Deaths in People with Epilepsy </a>
+              <br><br><a href="https://ocme.dc.gov/sites/default/files/dc/sites/ocme/release_content/attachments/Deaths%20in%20Custody_NAME_2017_0.pdf" target="_blank">Deaths in Custody_NAME_2017_0.pdf (dc.gov)</a>
+              <br><br><a href="https://www.cdc.gov/phlp/publications/coroner/investigations.html" target="_blank">CDC - Investigations and Autopsies - Coroner/Medical Examiner Laws - Public Health Law </a>
+              <br><br><a href="https://name.memberclicks.net/assets/docs/MANNEROFDEATH.pdf" target="_blank">NAME guide for manner of death classification </a>
+              <br><br><a href="https://name.memberclicks.net/death-certification" target="_blank">NAME guide for Death Certification</a>
 
-            <br /><br /><a href="https://pubmed.ncbi.nlm.nih.gov/31240030/" target="_blank">National Association of Medical Examiners Position Paper: Recommendations for the Investigation and Certification of Deaths in People with Epilepsy </a>
-            <br /><br /><a href="https://ocme.dc.gov/sites/default/files/dc/sites/ocme/release_content/attachments/Deaths%20in%20Custody_NAME_2017_0.pdf" target="_blank">Deaths in Custody_NAME_2017_0.pdf (dc.gov)</a>
-            <br /><br /><a href="https://www.cdc.gov/phlp/publications/coroner/investigations.html" target="_blank">CDC - Investigations and Autopsies - Coroner/Medical Examiner Laws - Public Health Law </a>
-            <br /><br /><a href="https://name.memberclicks.net/assets/docs/MANNEROFDEATH.pdf" target="_blank">NAME guide for manner of death classification </a>
-            <br /><br /><a href="https://name.memberclicks.net/death-certification" target="_blank">NAME guide for Death Certification</a>
 
+          </div>
+      </div>
 
-        </div>
-    </div>
+      <div class="wrapper">
+          <div id="myDIV4" onclick="closewords4()">
+             <b> 
+              Drug Overdose </b>
 
-    <div class="wrapper">
-        <div id="myDIV4" onclick="closewords4()">
-            <b> 
-                Drug Overdose </b>
+   <br><br> Over the past two decades, drug overdose deaths have risen five-fold. Deaths resulting from drug overdose/toxicity have 
+            contributed significantly to the workload of medical examiner and coroners (MECs), as these deaths generally require medicolegal death investigation 
+            to determine the cause and manner of death, as well as the types of drugs involved.  
+            <br><br>  Multiple reports have been generated that report on this issue. The links below
+             provide recommendations and guidance for classification and analysis of drug overdose deaths: 
 
-            <br /><br /> Over the past two decades, drug overdose deaths have risen five-fold. Deaths resulting from drug overdose/toxicity have contributed significantly to the workload of medical examiner and coroners (MECs), as these deaths generally
-            require medicolegal death investigation to determine the cause and manner of death, as well as the types of drugs involved.
-            <br /><br /> Multiple reports have been generated that report on this issue. The links below provide recommendations and guidance for classification and analysis of drug overdose deaths:
+              <br><br> <a href="https://www.nist.gov/system/files/documents/2019/05/22/osac_mdi_drug_related_investigation_recommendations_final_2-14-18.pdf" target="_blank">OSAC Drug Related Investigation Recommendations FINAL_10.8.17-1.docx  </a>
 
-            <br /><br /> <a href="https://www.nist.gov/system/files/documents/2019/05/22/osac_mdi_drug_related_investigation_recommendations_final_2-14-18.pdf" target="_blank">OSAC Drug Related Investigation Recommendations FINAL_10.8.17-1.docx  </a>
+              <br><br> <a href="https://journals.sagepub.com/doi/10.23907/2013.010" target="_blank">Recommendations for the Investigation, Diagnosis, and Certification of Deaths Related to Opioid Drugs </a>
 
-            <br /><br /> <a href="https://journals.sagepub.com/doi/10.23907/2013.010" target="_blank">Recommendations for the Investigation, Diagnosis, and Certification of Deaths Related to Opioid Drugs </a>
+              <br><br> <a href="https://www.cste.org/blogpost/1084057/211072/Epi-Tool-to-Analyze-Overdose-Death-Data" target="_blank">Epi Tool to Analyze Overdose Death Data - Council of State and Territorial Epidemiologists (cste.org)</a>
+              
+              <br><br> <a href="https://bja.ojp.gov/library/publications/overdose-fatality-review-data-system-user-guide" target="_blank">Overdose Fatality Review Data System User Guide | Bureau of Justice Assistance (ojp.gov) </a>
 
-            <br /><br /> <a href="https://www.cste.org/blogpost/1084057/211072/Epi-Tool-to-Analyze-Overdose-Death-Data" target="_blank">Epi Tool to Analyze Overdose Death Data - Council of State and Territorial Epidemiologists (cste.org)</a>
+              <br><br> <a href="https://nida.nih.gov/research-topics/trends-statistics/overdose-death-rates" target="_blank">Drug Overdose Death Rates | National Institute on Drug Abuse (NIDA) (nih.gov) </a>
+              
+              <br><br> <a href="https://www.cdc.gov/nchs/products/databriefs/db457.htm" target="_blank">Data Briefs - Number 457 - December 2022 (cdc.gov)</a>
+                              
+              <br><br> <a href="https://cdn.ymaws.com/www.cste.org/resource/resmgr/Injury/Analysis_of_data_on_drug_poi.pdf" target="_blank">Analysis_of_data_on_drug_poi.pdf (ymaws.com) </a>
+                              
+              <br><br> <a href="https://www.cdc.gov/nchs/data/nvss/vsrg/vsrg02-508.pdf" target="_blank">Vital Statistics Reference Guidance, Number 2, May, 2019 (cdc.gov) </a>
+                              
+              <br><br> <a href="https://www.cdc.gov/drugoverdose/deaths/index.html" target="_blank">Death Rate Maps & Graphs | Drug Overdose | CDC Injury Center </a>
 
-            <br /><br /> <a href="https://bja.ojp.gov/library/publications/overdose-fatality-review-data-system-user-guide" target="_blank">Overdose Fatality Review Data System User Guide | Bureau of Justice Assistance (ojp.gov) </a>
+              <br><br> <a href="https://www.cdc.gov/nchs/nvss/vsrr/provisional-drug-overdose.htm" target="_blank">Products - Vital Statistics Rapid Release - Provisional Drug Overdose Surveillance (cdc.gov)</a>
+              <br><br> <a href="https://www.cste.org/general/custom.asp?page=DrugOVDDeaths" target="_blank">Drug Overdose Deaths - Council of State and Territorial Epidemiologists (cste.org) </a>
 
-            <br /><br /> <a href="https://nida.nih.gov/research-topics/trends-statistics/overdose-death-rates" target="_blank">Drug Overdose Death Rates | National Institute on Drug Abuse (NIDA) (nih.gov) </a>
+      </div>
 
-            <br /><br /> <a href="https://www.cdc.gov/nchs/products/databriefs/db457.htm" target="_blank">Data Briefs - Number 457 - December 2022 (cdc.gov)</a>
+      <div class="wrapper">
+          <div id="myDIV5" onclick="closewords5()">
+              <b>Annual Reports</b>
 
-            <br /><br /> <a href="https://cdn.ymaws.com/www.cste.org/resource/resmgr/Injury/Analysis_of_data_on_drug_poi.pdf" target="_blank">Analysis_of_data_on_drug_poi.pdf (ymaws.com) </a>
+              <br><br> Many medical examiner and coroner (MEC) offices produce annual reports describing the work of the office and highlighting the types of deaths occurring in their jurisdiction. Annual reports are required for accreditation by the
+              National Association of Medical Examiners (NAME) and by the International Association of Coroners and Medical Examiner (IACME).
 
-            <br /><br /> <a href="https://www.cdc.gov/nchs/data/nvss/vsrg/vsrg02-508.pdf" target="_blank">Vital Statistics Reference Guidance, Number 2, May, 2019 (cdc.gov) </a>
+              <br><br> The links below highlight the NAME and IACME annual report requirements for accreditation:
 
-            <br /><br /> <a href="https://www.cdc.gov/drugoverdose/deaths/index.html" target="_blank">Death Rate Maps &amp; Graphs | Drug Overdose | CDC Injury Center </a>
+              <br><br>
 
-            <br /><br /> <a href="https://www.cdc.gov/nchs/nvss/vsrr/provisional-drug-overdose.htm" target="_blank">Products - Vital Statistics Rapid Release - Provisional Drug Overdose Surveillance (cdc.gov)</a>
-            <br /><br /> <a href="https://www.cste.org/general/custom.asp?page=DrugOVDDeaths" target="_blank">Drug Overdose Deaths - Council of State and Territorial Epidemiologists (cste.org) </a>
+              <a href="https://name.memberclicks.net/assets/docs/NAME%20Accreditation%20Checklist%202019%20-%202024%203%2018-2021.pdf" target="_blank">NAME Inspection and Accreditation Checklist  (see pages 5-6 for annual report requirements)</a>
 
-        </div>
+              <br><br>
 
-        <div class="wrapper">
-            <div id="myDIV5" onclick="closewords5()">
-                <b>Annual Reports</b>
+              <a href="https://cdn.ymaws.com/theiacme.com/resource/resmgr/files/standards_-_site_version.pdf" target="_blank">IACME Accreditation Requirements (see pages 5-6 for annual report requirements)</a>
 
-                <br /><br /> Many medical examiner and coroner (MEC) offices produce annual reports describing the work of the office and highlighting the types of deaths occurring in their jurisdiction. Annual reports are required for accreditation by
-                the National Association of Medical Examiners (NAME) and by the International Association of Coroners and Medical Examiner (IACME).
+              <br><br> The links below highlight examples of annual reports:
 
-                <br /><br /> The links below highlight the NAME and IACME annual report requirements for accreditation:
+              <br><br>
 
-                <br /><br />
+              <a href="https://health.maryland.gov/ocme/docs/2020%20Annual%20Report.pdf" target="_blank">Maryland OCME 2020 Annual Report</a><br>
 
-                <a href="https://name.memberclicks.net/assets/docs/NAME%20Accreditation%20Checklist%202019%20-%202024%203%2018-2021.pdf" target="_blank">NAME Inspection and Accreditation Checklist  (see pages 5-6 for annual report requirements)</a>
+              <a href="https://portal.ct.gov/OCME/Statistics" target="_blank">Connecticut Statistics</a><br>
 
-                <br /><br />
+              <a href="https://ocme.dc.gov/page/ocme-annual-reports" target="_blank">District of Columbia OCME Annual Reports</a><br>
 
-                <a href="https://cdn.ymaws.com/theiacme.com/resource/resmgr/files/standards_-_site_version.pdf" target="_blank">IACME Accreditation Requirements (see pages 5-6 for annual report requirements)</a>
+              <a href="https://ocme.dc.gov/publication/epidemiology-and-surveillance-reports" target="_blank">District of Columbia OCME Epidemiology and Surveillance Reports</a><br>
 
-                <br /><br /> The links below highlight examples of annual reports:
+              <a href="https://mec.lacounty.gov/wp-content/uploads/2023/03/2021-Annual-Report_.pdf" target="_blank">Los Angeles County 2021 Annual Report</a><br>
 
-                <br /><br />
+              <a href="https://ifs.harriscountytx.gov/Documents/2021AnnualReport_FINAL.pdf#search=annual%20report" target="_blank">Harris County TX 2021 Annual Report</a><br>
 
-                <a href="https://health.maryland.gov/ocme/docs/2020%20Annual%20Report.pdf" target="_blank">Maryland OCME 2020 Annual Report</a><br />
+              <a href="https://www.ocsheriff.gov/sites/ocsd/files/2022-09/Annual%20Report%202021%20-%20FINAL.pdf" target="_blank">Orange County Coroner Annual Report 2021</a><br>
 
-                <a href="https://portal.ct.gov/OCME/Statistics" target="_blank">Connecticut Statistics</a><br />
+              <a href="https://kingcounty.gov/depts/health/examiner/services/reports-data.aspx" target="_blank">King County WA Medical Examiner's 2021 Annual Report</a><br>
 
-                <a href="https://ocme.dc.gov/page/ocme-annual-reports" target="_blank">District of Columbia OCME Annual Reports</a><br />
+              <a href="https://www.maricopa.gov/ArchiveCenter/ViewFile/Item/5439" target="_blank">Maricopa County | Office of the Medical Examiner | 2021 Annual Report</a><br>
 
-                <a href="https://ocme.dc.gov/publication/epidemiology-and-surveillance-reports" target="_blank">District of Columbia OCME Epidemiology and Surveillance Reports</a><br />
+              <a href="https://iosme.iowa.gov/sites/default/files/documents/2022/08/2021_iosme_annual_report.pdf" target="_blank">Iowa OCME 2021 annual report</a><br>
 
-                <a href="https://mec.lacounty.gov/wp-content/uploads/2023/03/2021-Annual-Report_.pdf" target="_blank">Los Angeles County 2021 Annual Report</a><br />
+              <a href="https://cuyahogacms.blob.core.windows.net/home/docs/default-source/me-library/statisticalreports/2020statisticalreport.pdf?sfvrsn=4ed37ac2_4" target="_blank">Cuyahoga County 2020 Medical Examiner's Statistical Report</a><br>
 
-                <a href="https://ifs.harriscountytx.gov/Documents/2021AnnualReport_FINAL.pdf#search=annual%20report" target="_blank">Harris County TX 2021 Annual Report</a><br />
+              <a href="https://hsc.unm.edu/omi/2020-annualreport-.pdf" target="_blank">New Mexico 2020-annualreport-.pdf</a><br>
+          </div>
+      </div>
 
-                <a href="https://www.ocsheriff.gov/sites/ocsd/files/2022-09/Annual%20Report%202021%20-%20FINAL.pdf" target="_blank">Orange County Coroner Annual Report 2021</a><br />
+      <div class="wrapper">
+          <div id="myDIV6" onclick="closewords6()">
+              <b>Fatality</b>
 
-                <a href="https://kingcounty.gov/depts/health/examiner/services/reports-data.aspx" target="_blank">King County WA Medical Examiner's 2021 Annual Report</a><br />
+              <br><br> Fatality review is a process that involves a multidisciplinary team that reviews the details of individual deaths to help communities understand why the death occurred and to identify possible interventions to prevent similar
+              fatalities in the future. The multidisciplinary teams include members from many disciplines, such as public health, the medical profession, coroners and medical examiners, law enforcement, social services, schools, pharmacists, traffic
+              safety, prevention specialists, and others, depending on the types of deaths being reviewed. Fatality review teams often focus on a particular group of deaths, such as those involving children or the elderly, those involving maternal fatality,
+              deaths resulting from domestic violence, suicide, homicide, deaths involving firearms, fatal overdose or drug intoxication, etc. Because coroners and medical examiners are responsible for the investigation of sudden and unexpected deaths
+              to determine the cause and manner of death, they are essential contributors to fatality review teams.
 
-                <a href="https://www.maricopa.gov/ArchiveCenter/ViewFile/Item/5439" target="_blank">Maricopa County | Office of the Medical Examiner | 2021 Annual Report</a><br />
+              <br><br> The links below provide information on recommendations from national organizations regarding fatality review for various types of deaths:
 
-                <a href="https://iosme.iowa.gov/sites/default/files/documents/2022/08/2021_iosme_annual_report.pdf" target="_blank">Iowa OCME 2021 annual report</a><br />
+              <br><br>
 
-                <a href="https://cuyahogacms.blob.core.windows.net/home/docs/default-source/me-library/statisticalreports/2020statisticalreport.pdf?sfvrsn=4ed37ac2_4" target="_blank">Cuyahoga County 2020 Medical Examiner's Statistical Report</a><br />
+              <a href="https://ncfrp.org/" target="_blank">The National Center for Fatality Review and Prevention – Keeping Kids Alive (ncfrp.org)</a> <br>
 
-                <a href="https://hsc.unm.edu/omi/2020-annualreport-.pdf" target="_blank">New Mexico 2020-annualreport-.pdf</a><br />
-            </div>
-        </div>
+              <a href="https://ndvfri.org/review-teams/" target="_blank">REVIEW TEAMS - National Domestic Violence Fatality Review Initiative (ndvfri.org)</a> <br>
 
-        <div class="wrapper">
-            <div id="myDIV6" onclick="closewords6()">
-                <b>Fatality</b>
+              <a href="https://ovc.ojp.gov/library/publications/elder-abuse-fatality-review-teams-replication-manual" target="_blank">Elder Abuse Fatality Review Teams: A Replication Manual | Office for Victims of Crime (ojp.gov)</a> <br>
 
-                <br /><br /> Fatality review is a process that involves a multidisciplinary team that reviews the details of individual deaths to help communities understand why the death occurred and to identify possible interventions to prevent similar
-                fatalities in the future. The multidisciplinary teams include members from many disciplines, such as public health, the medical profession, coroners and medical examiners, law enforcement, social services, schools, pharmacists, traffic
-                safety, prevention specialists, and others, depending on the types of deaths being reviewed. Fatality review teams often focus on a particular group of deaths, such as those involving children or the elderly, those involving maternal fatality,
-                deaths resulting from domestic violence, suicide, homicide, deaths involving firearms, fatal overdose or drug intoxication, etc. Because coroners and medical examiners are responsible for the investigation of sudden and unexpected deaths
-                to determine the cause and manner of death, they are essential contributors to fatality review teams.
+              <a href="https://www.cossapresources.org/Content/Documents/Articles/Overdose_Fatality_Review_Practitioners_Guide.pdf" target="_blank">Overdose Fatality Review (cossapresources.org)</a> <br>
 
-                <br /><br /> The links below provide information on recommendations from national organizations regarding fatality review for various types of deaths:
+              <a href="https://legislativeanalysis.org/model-overdose-fatality-review-teams-act/" target="_blank">Model Overdose Fatality Review Teams Act • LAPPA (legislativeanalysis.org)</a>
 
-                <br /><br />
+              <br><br> The links below provide examples of reports and dashboards from fatality review teams:
 
-                <a href="https://ncfrp.org/" target="_blank">The National Center for Fatality Review and Prevention – Keeping Kids Alive (ncfrp.org)</a> <br />
+              <br><br>
 
-                <a href="https://ndvfri.org/review-teams/" target="_blank">REVIEW TEAMS - National Domestic Violence Fatality Review Initiative (ndvfri.org)</a> <br />
+              <a href="https://ocme.dc.gov/sites/default/files/dc/sites/ocme/page_content/attachments/VFRC%202020%20Annual%20Report-FINAL%20v1.pdf" target="_blank">DC Violence Fatality Review 2020 Annual Report</a> <br>
 
-                <a href="https://ovc.ojp.gov/library/publications/elder-abuse-fatality-review-teams-replication-manual" target="_blank">Elder Abuse Fatality Review Teams: A Replication Manual | Office for Victims of Crime (ojp.gov)</a> <br />
+              <a href="https://www.chfs.ky.gov/agencies/dph/dmch/Documents/CFRAnnualReport.pdf" target="_blank">Kentucky Child Fatality Review AnnualReport</a> <br>
 
-                <a href="https://www.cossapresources.org/Content/Documents/Articles/Overdose_Fatality_Review_Practitioners_Guide.pdf" target="_blank">Overdose Fatality Review (cossapresources.org)</a> <br />
+              <a href="https://www.nyc.gov/assets/ocdv/downloads/pdf/2022-Annual-FRC-Report.pdf" target="_blank">New York City Domestic Violence Fatality Review 2022 Annual Report</a> <br>
 
-                <a href="https://legislativeanalysis.org/model-overdose-fatality-review-teams-act/" target="_blank">Model Overdose Fatality Review Teams Act • LAPPA (legislativeanalysis.org)</a>
+              <a href="https://cohealthviz.dphe.state.co.us/t/PSDVIP-MHPPUBLIC/views/CFPSDashboardFinalLocal/Story1?iframeSizedToWindow=true&%3Aembed=y&%3AshowAppBanner=false&%3Adisplay_count=no&%3AshowVizHome=no" target="_blank">Colorado Child Fatality Review Dashboard</a>                <br>
 
-                <br /><br /> The links below provide examples of reports and dashboards from fatality review teams:
+              <br><br>
 
-                <br /><br />
+          </div>
+      </div>
 
-                <a href="https://ocme.dc.gov/sites/default/files/dc/sites/ocme/page_content/attachments/VFRC%202020%20Annual%20Report-FINAL%20v1.pdf" target="_blank">DC Violence Fatality Review 2020 Annual Report</a> <br />
+      <div class="wrapper">
+          <div id="myDIV7" onclick="closewords7()">
+              <b>Coding and Case Definitions </b>
 
-                <a href="https://www.chfs.ky.gov/agencies/dph/dmch/Documents/CFRAnnualReport.pdf" target="_blank">Kentucky Child Fatality Review AnnualReport</a> <br />
+              <br><br> Some medical examiners and coroners (MECs) use data coded using the International Classification of Diseases, Tenth Revision (ICD-10) for selecting specific subsets of deaths. The use of standardized case definitions allows uniform comparison of cases among jurisdictions. 
+              The Centers for Disease Control and Prevention (CDC) and the National Center for Health Statistics (NCHS) have developed standard case definitions for several causes of death. The links below provide recommendations and guidance for the coding of death certificates and other mortality data, and for standardization of case definitions to identify specific subsets of deaths: 
+              
+              <br><br> ICD-10 for underlying and contributory causes of death:
 
-                <a href="https://www.nyc.gov/assets/ocdv/downloads/pdf/2022-Annual-FRC-Report.pdf" target="_blank">New York City Domestic Violence Fatality Review 2022 Annual Report</a> <br />
+              <br><br><a href="https://www.cdc.gov/nchs/data/ice/icd10_transcode.pdf">External Cause of Injury Mortality Matrix for I C D - 10 (cdc.gov) </a> 
+              <br><br> <a href="https://www.cdc.gov/nchs/products/databriefs/db464.htm">Suicide Mortality in the US 2001-2021 </a>
+              <br><br><a href="https://www.cdc.gov/traumaticbraininjury/pdf/TBI-surveillance-report-2018-2019-508.pdf">Traumatic Brain Injury Surveillance Report </a>
+              <br><br><a href="https://www.cdc.gov/nchs/data/nvsr/nvsr70/nvsr70-09-508.pdf">National Vital Statistics Reports- Deaths: Leading Causes for 2019 </a>
+              <br><br><a href="https://www.whofic.nl/sites/default/files/2018-05/ICECI%20in%20English.pdf">Drug Overdose Deaths in the US 2001-2021</a> 
+              <br><br> Other definitions and case selection criteria (not involving ICD-10): 
+              <br>Homelessness <br>
+              <br><br><a href="https://www.hudexchange.info/news/huds-definition-of-homelessness-resources-and-guidance/">HUD's Definition of Homelessness: Resources and Guidance - HUD Exchange </a>
+              <br><br><p>NVDRS definition</p><a href="https://www.cdc.gov/violenceprevention/pdf/nvdrs/nvdrsCodingManual.pdf">National Violent Death Reporting System (cdc.gov) </a>
+              <br><br>Work-related
+              <a href="https://wwwn.cdc.gov/wisards/workrisqs/">NIOSH Work-RISQS (cdc.gov) </a>
+              <br><br><a href="https://mail.google.com/mail/u/0/#inbox/QgrcJHrtwLwSwcFQFKsZqKKKpHBplGRkmNG">BLS OSH Definitions </a>
+              <br><br>Obesity 
+              <br><br><a href="https://www.cdc.gov/obesity/basics/adult-defining.html">Defining Adult Overweight & Obesity | Overweight & Obesity | CDC </a>
+              <br><br>Sudden Death in the Young
+              <br><br><a href="https://sdyregistry.org">Sudden Death in the Young Case Registry</a>
+          </div>
+      </div>
 
-                <a href="https://cohealthviz.dphe.state.co.us/t/PSDVIP-MHPPUBLIC/views/CFPSDashboardFinalLocal/Story1?iframeSizedToWindow=true&amp;%3Aembed=y&amp;%3AshowAppBanner=false&amp;%3Adisplay_count=no&amp;%3AshowVizHome=no" target="_blank">Colorado Child Fatality Review Dashboard</a>                <br />
+      <div class="wrapper">
+          <div id="myDIV8" onclick="closewords8()">
+              <b>Suicide</b>
 
-                <br /><br />
+              <br><br> Suicide is emerging as a leading cause of death in the United States for adolescents and adults in the United States. Medical examiners and coroners (MECs) play a key role in these cases,
+               as they investigate potential suicide incidents to determine the cause and manner of death.  
+              <br><br> The links below provide recommendations and guidance related to the classification and analysis of deaths from suicide.  
 
-            </div>
-        </div>
+              <br><br><a href="https://www.cdc.gov/nchs/data/databriefs/db464.pdf" target="_blank">Suicide Mortality in the US 2001-2021 </a>
 
-        <div class="wrapper">
-            <div id="myDIV7" onclick="closewords7()">
-                <b>Coding and Case Definitions </b>
+              <br><br> <a href="https://www.cdc.gov/violenceprevention/datasources/nvdrs/index.html" target="_blank">Violent Death Reporting System|NVDRS|Violence Prevention|Injury Center|CDC </a> 
 
-                <br /><br /> Some medical examiners and coroners (MECs) use data coded using the International Classification of Diseases, Tenth Revision (ICD-10) for selecting specific subsets of deaths. The use of standardized case definitions allows
-                uniform comparison of cases among jurisdictions. The Centers for Disease Control and Prevention (CDC) and the National Center for Health Statistics (NCHS) have developed standard case definitions for several causes of death. The links
-                below provide recommendations and guidance for the coding of death certificates and other mortality data, and for standardization of case definitions to identify specific subsets of deaths:
+              <br><br> <a href="https://www.cdc.gov/violenceprevention/datasources/nvdrs/index.html" target="_blank">Suicide Prevention | Suicide | CDC </a>
 
-                <br /><br /> ICD-10 for underlying and contributory causes of death:
+              <br><br> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6336043/" target="_blank">Collecting Sexual Orientation and Gender Identity Information at Death - PMC (nih.gov) </a>
 
-                <br /><br /><a href="https://www.cdc.gov/nchs/data/ice/icd10_transcode.pdf">External Cause of Injury Mortality Matrix for I C D - 10 (cdc.gov) </a>
-                <br /><br /> <a href="https://www.cdc.gov/nchs/products/databriefs/db464.htm">Suicide Mortality in the US 2001-2021 </a>
-                <br /><br /><a href="https://www.cdc.gov/traumaticbraininjury/pdf/TBI-surveillance-report-2018-2019-508.pdf">Traumatic Brain Injury Surveillance Report </a>
-                <br /><br /><a href="https://www.cdc.gov/nchs/data/nvsr/nvsr70/nvsr70-09-508.pdf">National Vital Statistics Reports- Deaths: Leading Causes for 2019 </a>
-                <br /><br /><a href="https://www.whofic.nl/sites/default/files/2018-05/ICECI%20in%20English.pdf">Drug Overdose Deaths in the US 2001-2021</a>
-                <br /><br /> Other definitions and case selection criteria (not involving ICD-10):
-                <br />Homelessness <br />
-                <br /><br /><a href="https://www.hudexchange.info/news/huds-definition-of-homelessness-resources-and-guidance/">HUD's Definition of Homelessness: Resources and Guidance - HUD Exchange </a>
-                <br /><br />
-                <p>NVDRS definition</p><a href="https://www.cdc.gov/violenceprevention/pdf/nvdrs/nvdrsCodingManual.pdf">National Violent Death Reporting System (cdc.gov) </a>
-                <br /><br />Work-related
-                <a href="https://wwwn.cdc.gov/wisards/workrisqs/">NIOSH Work-RISQS (cdc.gov) </a>
-                <br /><br /><a href="https://mail.google.com/mail/u/0/#inbox/QgrcJHrtwLwSwcFQFKsZqKKKpHBplGRkmNG">BLS OSH Definitions </a>
-                <br /><br />Obesity
-                <br /><br /><a href="https://www.cdc.gov/obesity/basics/adult-defining.html">Defining Adult Overweight &amp; Obesity | Overweight &amp; Obesity | CDC </a>
-                <br /><br />Sudden Death in the Young
-                <br /><br /><a href="https://sdyregistry.org">Sudden Death in the Young Case Registry</a>
-            </div>
-        </div>
+              <br><br><a href="https://journals.lww.com/amjforensicmedicine/Abstract/2022/03000/Training_Death_Investigators_to_Identify.9.aspx" target="_blank">Training Death Investigators to Identify Decedents' Sexual Orientation and Gender Identity </a>
+            
 
-        <div class="wrapper">
-            <div id="myDIV8" onclick="closewords8()">
-                <b>Suicide</b>
+            
+          </div>
+      </div>
 
-                <br /><br /> Suicide is emerging as a leading cause of death in the United States for adolescents and adults in the United States. Medical examiners and coroners (MECs) play a key role in these cases, as they investigate potential suicide
-                incidents to determine the cause and manner of death.
-                <br /><br /> The links below provide recommendations and guidance related to the classification and analysis of deaths from suicide.
+      <div class="wrapper">
+          <div id="myDIV9" onclick="closewords9()">
+              Annual Reports
 
-                <br /><br /><a href="https://www.cdc.gov/nchs/data/databriefs/db464.pdf" target="_blank">Suicide Mortality in the US 2001-2021 </a>
+              <br><br> Many medical examiner and coroner (MEC) offices produce annual reports describing the work of the office and highlighting the types of deaths occurring in their jurisdiction. Annual reports are required for accreditation by the
+              National Association of Medical Examiners (NAME) and by the International Association of Coroners and Medical Examiner (IACME).
 
-                <br /><br /> <a href="https://www.cdc.gov/violenceprevention/datasources/nvdrs/index.html" target="_blank">Violent Death Reporting System|NVDRS|Violence Prevention|Injury Center|CDC </a>
+              <br><br> The links below highlight the NAME and IACME annual report requirements for accreditation:
 
-                <br /><br /> <a href="https://www.cdc.gov/violenceprevention/datasources/nvdrs/index.html" target="_blank">Suicide Prevention | Suicide | CDC </a>
+              <br><br> NAME Inspection and Accreditation Checklist (see pages 5-6 for annual report requirements)
 
-                <br /><br /> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6336043/" target="_blank">Collecting Sexual Orientation and Gender Identity Information at Death - PMC (nih.gov) </a>
+              <br><br> IACME Accreditation Requirements (see pages 5-6 for annual report requirements)
 
-                <br /><br /><a href="https://journals.lww.com/amjforensicmedicine/Abstract/2022/03000/Training_Death_Investigators_to_Identify.9.aspx" target="_blank">Training Death Investigators to Identify Decedents' Sexual Orientation and Gender Identity </a>
+              <br><br> The links below highlight examples of annual reports:
 
+              <br><br> Maryland OCME 2020 Annual Report<br> Connecticut Statistics<br> District of Columbia OCME Annual Reports<br> District of Columbia OCME Epidemiology and Surveillance Reports<br> Los Angeles County 2021 Annual Report<br> Harris
+              County TX 2021 Annual Report<br> Orange County Coroner Annual Report 2021<br> King County WA Medical Examiner's 2021 Annual Report<br> Maricopa County | Office of the Medical Examiner | 2021 Annual Report<br> Iowa OCME 2021 annual report<br>                Cuyahoga County 2020 Medical Examiner's Statistical Report<br> New Mexico 2020-annualreport-.pdf<br>
+          </div>
+      </div>
 
+      <div class="wrapper">
+          <div id="myDIV10" onclick="closewords10()">
+              Annual Reports
 
-            </div>
-        </div>
+              <br><br> Many medical examiner and coroner (MEC) offices produce annual reports describing the work of the office and highlighting the types of deaths occurring in their jurisdiction. Annual reports are required for accreditation by the
+              National Association of Medical Examiners (NAME) and by the International Association of Coroners and Medical Examiner (IACME).
 
-        <div class="wrapper">
-            <div id="myDIV9" onclick="closewords9()">
-                Annual Reports
+              <br><br> The links below highlight the NAME and IACME annual report requirements for accreditation:
 
-                <br /><br /> Many medical examiner and coroner (MEC) offices produce annual reports describing the work of the office and highlighting the types of deaths occurring in their jurisdiction. Annual reports are required for accreditation by
-                the National Association of Medical Examiners (NAME) and by the International Association of Coroners and Medical Examiner (IACME).
+              <br><br> NAME Inspection and Accreditation Checklist (see pages 5-6 for annual report requirements)
 
-                <br /><br /> The links below highlight the NAME and IACME annual report requirements for accreditation:
+              <br><br> IACME Accreditation Requirements (see pages 5-6 for annual report requirements)
 
-                <br /><br /> NAME Inspection and Accreditation Checklist (see pages 5-6 for annual report requirements)
+              <br><br> The links below highlight examples of annual reports:
 
-                <br /><br /> IACME Accreditation Requirements (see pages 5-6 for annual report requirements)
+              <br><br> Maryland OCME 2020 Annual Report<br> Connecticut Statistics<br> District of Columbia OCME Annual Reports<br> District of Columbia OCME Epidemiology and Surveillance Reports<br> Los Angeles County 2021 Annual Report<br> Harris
+              County TX 2021 Annual Report<br> Orange County Coroner Annual Report 2021<br> King County WA Medical Examiner's 2021 Annual Report<br> Maricopa County | Office of the Medical Examiner | 2021 Annual Report<br> Iowa OCME 2021 annual report<br>                Cuyahoga County 2020 Medical Examiner's Statistical Report<br> New Mexico 2020-annualreport-.pdf<br>
+          </div>
+      </div>
 
-                <br /><br /> The links below highlight examples of annual reports:
+      <!--Middle Squares-->
+      <div class="wrapper">
+          <div class="squarebuttons">
 
-                <br /><br /> Maryland OCME 2020 Annual Report<br /> Connecticut Statistics<br /> District of Columbia OCME Annual Reports<br /> District of Columbia OCME Epidemiology and Surveillance Reports<br /> Los Angeles County 2021 Annual Report<br
-                /> Harris County TX 2021 Annual Report<br /> Orange County Coroner Annual Report 2021<br /> King County WA Medical Examiner's 2021 Annual Report<br /> Maricopa County | Office of the Medical Examiner | 2021 Annual Report<br /> Iowa OCME
-                2021 annual report
-                <br /> Cuyahoga County 2020 Medical Examiner's Statistical Report<br /> New Mexico 2020-annualreport-.pdf<br />
-            </div>
-        </div>
+              <div class="squarebuttonsleft">
 
-        <div class="wrapper">
-            <div id="myDIV10" onclick="closewords10()">
-                Annual Reports
+                  <button onclick="myFunction()">
+                      <div class="res 1">
+                          <div class="restxt1">
+                              Case Management Software 
+                          </div>
+                      </div>  
+                  </button>
 
-                <br /><br /> Many medical examiner and coroner (MEC) offices produce annual reports describing the work of the office and highlighting the types of deaths occurring in their jurisdiction. Annual reports are required for accreditation by
-                the National Association of Medical Examiners (NAME) and by the International Association of Coroners and Medical Examiner (IACME).
+                  <button onclick="myFunction2()">
+                      <div class="res 2">
+                          <div class="restxt2">
+                              Data Visualization/Dashboards 
+                          </div>
+                      </div>
+                  </button>
 
-                <br /><br /> The links below highlight the NAME and IACME annual report requirements for accreditation:
+                  <button onclick="myFunction3()">
+                      <div class="res 3">
+                          <div class="restxt3">
+                              Death Certification Guidance 
+                          </div>
+                      </div>
+                  </button>
 
-                <br /><br /> NAME Inspection and Accreditation Checklist (see pages 5-6 for annual report requirements)
+                  <button onclick="myFunction4()">
+                      <div class="res 4">
+                          <div class="restxt4">
+                              Drug Overdose
+                          </div>
+                      </div> 
+                  </button>
 
-                <br /><br /> IACME Accreditation Requirements (see pages 5-6 for annual report requirements)
+              </div>
 
-                <br /><br /> The links below highlight examples of annual reports:
 
-                <br /><br /> Maryland OCME 2020 Annual Report<br /> Connecticut Statistics<br /> District of Columbia OCME Annual Reports<br /> District of Columbia OCME Epidemiology and Surveillance Reports<br /> Los Angeles County 2021 Annual Report<br
-                /> Harris County TX 2021 Annual Report<br /> Orange County Coroner Annual Report 2021<br /> King County WA Medical Examiner's 2021 Annual Report<br /> Maricopa County | Office of the Medical Examiner | 2021 Annual Report<br /> Iowa OCME
-                2021 annual report
-                <br /> Cuyahoga County 2020 Medical Examiner's Statistical Report<br /> New Mexico 2020-annualreport-.pdf<br />
-            </div>
-        </div>
+              <div class="squarebuttonsright">
 
-        <!--Middle Squares-->
-        <div class="wrapper">
-            <div class="squarebuttons">
-
-                <div class="squarebuttonsleft">
-
-                    <button onclick="myFunction()">
-                        </button>
-                    <div class="res 1">
-                        <div class="restxt1">
-                            Case Management Software
-                        </div>
-                    </div>
-
-                    <button onclick="myFunction2()">
-                        </button>
-                    <div class="res 2">
-                        <div class="restxt2">
-                            Data Visualization/Dashboards
-                        </div>
-                    </div>
-
-                    <button onclick="myFunction3()">
-                        </button>
-                    <div class="res 3">
-                        <div class="restxt3">
-                            Death Certification Guidance
-                        </div>
-                    </div>
-
-                    <button onclick="myFunction4()">
-                        </button>
-                    <div class="res 4">
-                        <div class="restxt4">
-                            Drug Overdose
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="squarebuttonsright">
-
-                    <button onclick="myFunction5()">
-                        </button>
-                    <div class="res 5">
-                        <div class="restxt5">
-                            Annual Reports
-                        </div>
-                    </div>
-
-                    <button onclick="myFunction6()">
-                        </button>
-                    <div class="res 6">
-                        <div class="restxt6">
-                            Fatality Review Teams
-                        </div>
-                    </div>
-
-                    <button onclick="myFunction7()">
-                        </button>
-                    <div class="res 7">
-                        <div class="restxt7">
-                            Coding and Case Definitions
-                        </div>
-                    </div>
-
-                    <button onclick="myFunction8()">
-                        </button>
-                    <div class="res 8">
-                        <div class="restxt8">
-                            Suicide
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <script>
-            /*Funtions to bring up words on click*/
-                function myFunction() {
-                    var x = document.getElementById("myDIV");
-                    if (x.style.display === "none") {
-                      x.style.display = "block";
-                    } else {
-                      x.style.display = "none";
-                    }
-                }
-                
-                function myFunction2() {
-                    var x = document.getElementById("myDIV2");
-                    if (x.style.display === "none") {
-                      x.style.display = "block";
-                    } else {
-                      x.style.display = "none";
-                    }
-                }
-                
-                function myFunction3() {
-                  var x = document.getElementById("myDIV3");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function myFunction4() {
-                  var x = document.getElementById("myDIV4");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function myFunction5(){
-                  var x = document.getElementById("myDIV5");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function myFunction6(){
-                  var x = document.getElementById("myDIV6");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function myFunction7(){
-                  var x = document.getElementById("myDIV7");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function myFunction8(){
-                  var x = document.getElementById("myDIV8");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  } 
-                }
-                
-                function myFunction9(){
-                  var x = document.getElementById("myDIV8");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  } 
-                }
-                
-                function myFunction10(){
-                  var x = document.getElementById("myDIV8");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  } 
-                }
-                
-                function myFunction11(){
-                  var x = document.getElementById("myDIV11");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  } 
-                }
-                
-                function myFunction12(){
-                  var x = document.getElementById("myDIV12");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  } 
-                }
-                
-                function myFunction13(){
-                  var x = document.getElementById("myDIV13");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  } 
-                }
-                
-                function myFunction14(){
-                  var x = document.getElementById("myDIV14");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  } 
-                }
-                
-                function myFunction15(){
-                  var x = document.getElementById("myDIV15");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  } 
-                }
-                
-                function myFunction16(){
-                  var x = document.getElementById("myDIV16");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  } 
-                }
-                
-                function myFunction1c(){
-                  var x = document.getElementById("myDIVc1");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function myFunction2c(){
-                  var x = document.getElementById("myDIVc2");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function myFunction3c(){
-                  var x = document.getElementById("myDIVc3");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  }
-                }
-                
-                /*Close words*/
-                function closewords(){
-                  var x = document.getElementById("myDIV");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords2(){
-                  var x = document.getElementById("myDIV2");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords3() {
-                  var x = document.getElementById("myDIV3");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords4() {
-                  var x = document.getElementById("myDIV4");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords5() {
-                  var x = document.getElementById("myDIV5");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords6() {
-                  var x = document.getElementById("myDIV6");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords7() {
-                  var x = document.getElementById("myDIV7");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords8() {
-                  var x = document.getElementById("myDIV8");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords9() {
-                  var x = document.getElementById("myDIV9");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords10() {
-                  var x = document.getElementById("myDIV10");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords11() {
-                  var x = document.getElementById("myDIV11");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords12() {
-                  var x = document.getElementById("myDIV12");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords13() {
-                  var x = document.getElementById("myDIV13");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords14() {
-                  var x = document.getElementById("myDIV14");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords15() {
-                  var x = document.getElementById("myDIV15");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewords16() {
-                  var x = document.getElementById("myDIV16");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewordsc1() {
-                  var x = document.getElementById("myDIVc1");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewordsc2() {
-                  var x = document.getElementById("myDIVc2");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-                
-                function closewordsc3() {
-                  var x = document.getElementById("myDIVc3");
-                  if (x.style.display = "block") {
-                    x.style.display = "none";
-                  }
-                }
-        </script>
-    </div>
-</div>
+                  <button onclick="myFunction5()">
+                      <div class="res 5">
+                          <div class="restxt5">
+                              Annual Reports 
+                          </div>
+                      </div> 
+                  </button>
+
+                  <button onclick="myFunction6()">
+                      <div class="res 6">
+                          <div class="restxt6">
+                              Fatality Review Teams 
+                          </div>
+                      </div>
+                  </button>
+
+                  <button onclick="myFunction7()">
+                      <div class="res 7">
+                          <div class="restxt7">
+                              Coding and Case Definitions 
+                          </div>
+                      </div>
+                  </button>
+
+                  <button onclick="myFunction8()">
+                      <div class="res 8">
+                          <div class="restxt8">
+                              Suicide 
+                          </div>
+                      </div>
+                  </button>
+
+              </div>
+          </div>
+      </div>
+
+
+      <script>
+          /*Funtions to bring up words on click*/
+          function myFunction() {
+              var x = document.getElementById("myDIV");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+          }
+          
+          function myFunction2() {
+              var x = document.getElementById("myDIV2");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+          }
+          
+          function myFunction3() {
+            var x = document.getElementById("myDIV3");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          
+          function myFunction4() {
+            var x = document.getElementById("myDIV4");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          
+          function myFunction5(){
+            var x = document.getElementById("myDIV5");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          
+          function myFunction6(){
+            var x = document.getElementById("myDIV6");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          
+          function myFunction7(){
+            var x = document.getElementById("myDIV7");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          
+          function myFunction8(){
+            var x = document.getElementById("myDIV8");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            } 
+          }
+          
+          function myFunction9(){
+            var x = document.getElementById("myDIV8");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            } 
+          }
+          
+          function myFunction10(){
+            var x = document.getElementById("myDIV8");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            } 
+          }
+          
+          function myFunction11(){
+            var x = document.getElementById("myDIV11");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            } 
+          }
+          
+          function myFunction12(){
+            var x = document.getElementById("myDIV12");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            } 
+          }
+          
+          function myFunction13(){
+            var x = document.getElementById("myDIV13");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            } 
+          }
+          
+          function myFunction14(){
+            var x = document.getElementById("myDIV14");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            } 
+          }
+          
+          function myFunction15(){
+            var x = document.getElementById("myDIV15");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            } 
+          }
+          
+          function myFunction16(){
+            var x = document.getElementById("myDIV16");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            } 
+          }
+          
+          function myFunction1c(){
+            var x = document.getElementById("myDIVc1");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          
+          function myFunction2c(){
+            var x = document.getElementById("myDIVc2");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          
+          function myFunction3c(){
+            var x = document.getElementById("myDIVc3");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          
+          /*Close words*/
+          function closewords(){
+            var x = document.getElementById("myDIV");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords2(){
+            var x = document.getElementById("myDIV2");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords3() {
+            var x = document.getElementById("myDIV3");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords4() {
+            var x = document.getElementById("myDIV4");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords5() {
+            var x = document.getElementById("myDIV5");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords6() {
+            var x = document.getElementById("myDIV6");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords7() {
+            var x = document.getElementById("myDIV7");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords8() {
+            var x = document.getElementById("myDIV8");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords9() {
+            var x = document.getElementById("myDIV9");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords10() {
+            var x = document.getElementById("myDIV10");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords11() {
+            var x = document.getElementById("myDIV11");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords12() {
+            var x = document.getElementById("myDIV12");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords13() {
+            var x = document.getElementById("myDIV13");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords14() {
+            var x = document.getElementById("myDIV14");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords15() {
+            var x = document.getElementById("myDIV15");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewords16() {
+            var x = document.getElementById("myDIV16");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewordsc1() {
+            var x = document.getElementById("myDIVc1");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewordsc2() {
+            var x = document.getElementById("myDIVc2");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+          
+          function closewordsc3() {
+            var x = document.getElementById("myDIVc3");
+            if (x.style.display = "block") {
+              x.style.display = "none";
+            }
+          }
+      </script>
+</body>
